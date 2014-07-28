@@ -5,9 +5,5 @@ require "./lib/orderitem"
 require "./lib/order"
 require "awesome_print"
 
-ap Order.group(:customer_id).order(customer_id: :asc).sum("amount")
 
-
-
-
-
+ap Order.joins(:customer).select('orders.id, customers.name, orders.amount')
