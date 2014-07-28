@@ -5,5 +5,9 @@ require "./lib/orderitem"
 require "./lib/order"
 require "awesome_print"
 
-ap Item.where(description: "snow board").update_all(name: "board01")
+ap Item.create(name: "kayak01", description: "one person river kayak")
+
+
+
+
 
