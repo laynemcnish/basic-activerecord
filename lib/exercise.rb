@@ -4,4 +4,4 @@ require "./lib/item"
 require "./lib/orderitem"
 require "./lib/order"
 
-p Customer.where(id:1..5)
+p Customer.all.order(:name)
