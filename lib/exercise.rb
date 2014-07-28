@@ -5,4 +5,5 @@ require "./lib/orderitem"
 require "./lib/order"
 require "awesome_print"
 
-ap Customer.where(state: ["Ohio", "Virginia"])
+ap Item.where(description: "snow board").update_all(name: "board01")
+
