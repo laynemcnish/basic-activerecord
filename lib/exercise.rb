@@ -8,4 +8,4 @@ require "awesome_print"
 
 
 
-ap Customer.joins(:orders).select('customers.id, name, avg(amount) as amount').group('customers.id').order(name: :asc)
+ap Customer.joins(:orders).select('customers.id, name, round(avg(amount), 2) as amount').group('customers.id').order(name: :asc)
