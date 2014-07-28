@@ -4,4 +4,4 @@ require "./lib/item"
 require "./lib/orderitem"
 require "./lib/order"
 
-p Order.average("amount").to_f
+p Order.minimum("amount").to_f
