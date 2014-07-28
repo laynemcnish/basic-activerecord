@@ -4,4 +4,4 @@ require "./lib/item"
 require "./lib/orderitem"
 require "./lib/order"
 
-p Order.all.limit(5)
+p Order.all.reverse_order.limit(5)
